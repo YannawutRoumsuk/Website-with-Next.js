@@ -2,6 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes typing {
+  from { width: 0; opacity: 1; }
+  to { width: 100%; opacity: 1; }
+}
+
+.animate-typing {
+  display: inline-block;
+  opacity: 1;
+  animation: typing 2s steps(50, end) forwards;
+}
+
+.animate-typing-caret {
+  display: inline-block;
+  opacity: 1;
+  animation: typing 2s steps(50, end) forwards, blink-caret 0.75s step-end infinite;
+  border-right: 4px solid #3b82f6;
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: #3b82f6; }
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
