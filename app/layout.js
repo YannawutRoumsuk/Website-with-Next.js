@@ -1,6 +1,7 @@
 import { Inter } from 'next/font/google';
 import Link from 'next/link';
 import "./globals.css";
+import Chatbox from "../components/Chatbox"; // Import Chatbox
 
 
 const inter = Inter({ subsets: ['latin'], weight: ['400', '700'] });
@@ -38,6 +39,7 @@ export default function RootLayout({ children }) {
         <footer className="bg-textLight py-4 text-center text-textDark font-sans ">
           <p>© 2025 | Yannawut Roumsuk</p>
         </footer>
+        <Chatbox/>
       </body>
     </html>
   );
