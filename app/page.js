@@ -4,7 +4,7 @@ export default function Home() {
       <h1 className="text-6xl font-extrabold text-textDark leading-tight animate-typing overflow-hidden whitespace-nowrap pr-4">
         Hi!, I'm <span className="text-primary">Yannawut</span>
       </h1>
-      <h2 className="text-4xl font-semibold text-textDark mt-4 animate-typing overflow-hidden whitespace-nowrap pr-4" style={{ animationDelay: '1s' }}>
+      <h2 className="text-4xl font-semibold text-textDark mt-4 animate-typing-caret overflow-hidden whitespace-nowrap pr-4" style={{ animationDelay: '1s' }}>
         Welcome to my website
       </h2>
       <div className="mt-10 text-2xl text-gray-700 text-center space-y-4">
