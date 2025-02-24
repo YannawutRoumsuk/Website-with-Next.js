@@ -32,7 +32,7 @@ export default function About() {
       <div className="mt-8 max-w-2xl text-center">
         <h2 className="text-2xl font-semibold text-textDark">My interesting</h2>
         <div className="flex flex-wrap justify-center gap-4 mt-4">
-          <span className="px-4 py-2 bg-primary text-textDark rounded-lg shadow">AI & Machine Learning</span>
+          <span className="px-4 py-2 bg-primary text-textDark rounded-lg shadow">AI & Machine learning</span>
           <span className="px-4 py-2 bg-primary text-textDark rounded-lg shadow">Web Development</span>
           <span className="px-4 py-2 bg-primary text-textDark rounded-lg shadow">Cloud Computing</span>
           <span className="px-4 py-2 bg-primary text-textDark rounded-lg shadow">DevOps</span>
