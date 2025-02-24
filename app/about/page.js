@@ -35,7 +35,7 @@ export default function About() {
           <span className="px-4 py-2 bg-primary text-textDark rounded-lg shadow">AI & Machine Learning</span>
           <span className="px-4 py-2 bg-primary text-textDark rounded-lg shadow">Web Development</span>
           <span className="px-4 py-2 bg-primary text-textDark rounded-lg shadow">Cloud Computing</span>
-          <span className="px-4 py-2 bg-primary text-textDark rounded-lg shadow">Open Source Projects</span>
+          <span className="px-4 py-2 bg-primary text-textDark rounded-lg shadow">DevOps</span>
         </div>
       </div>
       
