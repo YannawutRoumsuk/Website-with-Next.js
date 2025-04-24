@@ -2,43 +2,44 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-secondary text-textDark px-6 py-10">
-      
-      {/* ส่วนที่ 1: รูปโปรไฟล์ + ชื่อ */}
-      <div className="flex flex-col items-center">
-        <Image 
-          src="/profile.jpg" //  (ใส่ใน public/)
-          alt="Profile Picture" 
-          width={200} 
-          height={300} 
-          className="rounded-full border-4 border-primary shadow-lg"
-        />
-        <h1 className="text-4xl font-bold mt-4 text-textDark">Yannawut Roumsuk</h1>
-        <p className="text-lg text-textDark mt-1">Devops | AI </p>
+    <div className="flex flex-col lg:flex-row items-center lg:items-start justify-center min-h-screen bg-secondary text-textDark px-6 py-16 gap-12">
+      {/* Profile Section */}
+      <div className="flex flex-col items-center lg:items-start lg:w-1/3">
+        <div className="relative w-48 h-48 lg:w-64 lg:h-64">
+          <Image
+            src="/profile.jpg"
+            alt="Profile Picture"
+            fill
+            className="rounded-full border-4 border-primary shadow-lg object-cover"
+          />
+        </div>
+        <h1 className="text-4xl lg:text-5xl font-bold mt-6 whitespace-nowrap text-center lg:text-left ">Yannawut Roumsuk</h1>
+        <p className="text-xl text-primary mt-2">DevOps Engineer | AI Enthusiast</p>
       </div>
 
-      {/* ส่วนที่ 2: เกี่ยวกับฉัน */}
-      <div className="mt-8 max-w-2xl text-center">
-        <h2 className="text-2xl font-semibold text-textDark">About me</h2>
-        <p className="mt-1 text-lg">
-        About MeMy name is Yannawut Roumsuk, born on July 30, 2002. I graduated from Naresuan University with a degree in Computer Engineering. 
-        I am deeply passionate about pursuing a career as a Programmer, as I find it to be a dynamic, innovative, and forward-thinking profession. 
-        My primary interests lie in DevOps and Artificial Intelligence (AI), fields that I am constantly exploring and learning more about. 
-        I am committed to continuous growth and staying updated with the latest advancements in technology to further develop my skills and expertise.
+      {/* Bio Section */}
+      <div className="lg:w-2/3 max-w-3xl">
+        <h2 className="text-3xl font-semibold mb-4">About Me</h2>
+        <p className="text-lg leading-relaxed">
+          My name is Yannawut Roumsuk, born on July 30, 2002. I graduated from Naresuan University with a degree in Computer Engineering. I have a strong passion for programming and technology, especially in the fields of DevOps and Artificial Intelligence. I thrive in environments that challenge me to learn and adapt, and I continuously seek opportunities to expand my knowledge and skills.
         </p>
-      </div>
+        <p className="text-lg leading-relaxed mt-4">
+          With experience in CI/CD pipelines, container orchestration, and AI model deployment, I aim to build scalable and efficient solutions. My goal is to bridge the gap between development and operations, ensuring seamless delivery and robust performance in every project I undertake.
+        </p>
 
-      {/* ส่วนที่ 3: สิ่งที่สนใจ / Skills */}
-      <div className="mt-8 max-w-2xl text-center">
-        <h2 className="text-2xl font-semibold text-textDark">My interesting</h2>
-        <div className="flex flex-wrap justify-center gap-4 mt-4">
-          <span className="px-4 py-2 bg-primary text-textDark rounded-lg shadow">AI & Machine learning</span>
-          <span className="px-4 py-2 bg-primary text-textDark rounded-lg shadow">Web Development</span>
-          <span className="px-4 py-2 bg-primary text-textDark rounded-lg shadow">Cloud Computing</span>
-          <span className="px-4 py-2 bg-primary text-textDark rounded-lg shadow">DevOps</span>
+        {/* Skills Section */}
+        <div className="mt-8">
+          <h3 className="text-2xl font-semibold mb-3">Skills & Interests</h3>
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+            <span className="px-4 py-2 bg-primary text-white rounded-lg shadow">AI & Machine Learning</span>
+            <span className="px-4 py-2 bg-primary text-white rounded-lg shadow">Web Development</span>
+            <span className="px-4 py-2 bg-primary text-white rounded-lg shadow">Cloud Computing</span>
+            <span className="px-4 py-2 bg-primary text-white rounded-lg shadow">DevOps & CI/CD</span>
+            <span className="px-4 py-2 bg-primary text-white rounded-lg shadow">Docker & Kubernetes</span>
+            <span className="px-4 py-2 bg-primary text-white rounded-lg shadow">Terraform & IaC</span>
+          </div>
         </div>
       </div>
-      
     </div>
   );
 }
