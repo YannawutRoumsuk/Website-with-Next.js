@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build && node scripts/prepare-standalone.mjs",
-    "start": "node .next/standalone/server.js",
+    "start": "cross-env HOSTNAME=0.0.0.0 node .next/standalone/server.js",
     "lint": "tsc --noEmit",
     "check": "tsc --noEmit",
     "test": "echo 'No tests found, skipping...'"

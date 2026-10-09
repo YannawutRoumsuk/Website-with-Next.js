@@ -43,7 +43,7 @@ The build produces a self-contained server in `.next/standalone` and copies both
 
 ## Railway deployment
 
-The repository includes `railway.json`, a Node 22 engine constraint, standalone output, and `GET /api/health`.
+The repository includes `railway.json`, a Node 22 engine constraint, standalone output, an explicit `0.0.0.0` bind, and `GET /api/health`.
 
 ```bash
 railway login
